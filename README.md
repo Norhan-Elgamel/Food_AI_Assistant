@@ -1,33 +1,23 @@
 # Food_AI_Assistant
 Python desktop app using Gemini AI for ingredient recognition and recipe generation
-README for Food_AI_Assistant
-🍳 Food AI Assistant
-A professional desktop application that leverages Artificial Intelligence to bridge the gap between image recognition and meal preparation.
 
-🚀 Overview
-This project was developed during my internship at Smart Vision Technology. The application allows users to upload an image of a dish, uses the Gemini AI API to identify ingredients, and matches them against a local inventory to suggest recipes and identify missing items.
+Project Overview
+This is a desktop application developed during my internship at Smart Vision Technology. It uses Artificial Intelligence to identify food ingredients from images and provide recipe suggestions.
 
-✨ Features
-AI Image Analysis: Uses Google Gemini API to extract ingredients from food photos.
+Key Features
 
-Fuzzy Matching: Implements fuzzy search logic to match AI results with local database naming conventions.
+AI Identification: Connects to the Gemini API to analyze food photos.
 
-Inventory Management: Distinguishes between "Available" and "Missing" ingredients.
+Ingredient Matching: Compares AI results with a local database based on the Kaggle "What's Cooking" dataset.
 
-Recipe Generation: Provides step-by-step cooking instructions and estimated cooking times.
+Smart Logic: Uses fuzzy search to find ingredients even if the names don't match perfectly.
 
-Professional UX: Built with a clean Python Tkinter interface.
+Recipe Output: Generates full cooking instructions and missing ingredient lists.
 
-🛠️ Tech Stack
-Language: Python 3.x
+Setup Requirements
 
-GUI Library: Tkinter
+Python 3.x
 
-AI Model: Google Gemini API
+Tkinter (for the interface)
 
-Database: SQLite / CSV (Inspired by Kaggle's "What's Cooking" dataset)
-
-Environment Management: python-dotenv for API security.
-
-📂 Dataset Credit
-The recipe logic and ingredient mapping are based on the Kaggle "What's Cooking?" Dataset.
+A .env file containing your Gemini API key (hidden for security).
